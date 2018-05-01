@@ -20,7 +20,7 @@ jobs:
 
 workflows: 
   version: 2
-  build-repo:
+  build_repo:
     jobs:
       - deploy:
         filters:
