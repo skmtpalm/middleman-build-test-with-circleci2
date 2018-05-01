@@ -11,10 +11,10 @@ jobs:
       - run:
         name: install dependencies
         command: |
-          bundle install --path vendor/bundle
+          bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - run:
-        name: Build
+        name: Build phase
         command: |
           bundle exec middleman build
 
