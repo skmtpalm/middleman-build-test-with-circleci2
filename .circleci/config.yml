@@ -1,11 +1,8 @@
 version: 2
 jobs:
   deploy:
-    docker:
-      - image: cicleci/ruby:2.4.1-node-browsers
-
+    machine: true
     working_directory: ~/repo
-
     steps:
       - checkout
       - run:
